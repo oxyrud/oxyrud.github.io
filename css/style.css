@@ -55,9 +55,20 @@ h2,h3,h4 {
 
 }
 
+.header__link:active {
+  opacity: .9;
+  transition: opacity 0.2s ease;
+}
+
 .sectionfirst__link:hover {
   border-bottom: 2px solid;
   padding-bottom: 9px;
+
+}
+
+.section__link:active {
+  opacity: .9;
+  transition: opacity 0.2s ease;
 
 }
 
@@ -116,6 +127,7 @@ button {
   width: 24px;
   height: 15px;
   padding-bottom: 8px;
+  cursor: pointer;
 
 }
 
@@ -268,7 +280,9 @@ button {
   color : #000;
   text-decoration: none;
   text-align: center;
-	
+	text-transform: uppercase;
+  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+
 }
 
 .sectionfirst__wrapfourth {
@@ -282,15 +296,23 @@ button {
   font-size: 13px;
   color : #E51937;
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #E51937;
   width: 160px;
   height: 40px;
-    
+  cursor: pointer;
+
 }
 
 .sectionfirst__order:hover {
   background-color: #E51937;
   color:#FFF;
+  transition: background .5s ease;
+}
+
+.sectionfirst__order:active {
+  opacity: .9;
+  transition: opacity 0.2s ease;
 
 }
 
@@ -442,9 +464,6 @@ button {
 
 }
 
-.sectionfirst__link:hover {
-  
-}
 .sectionfirst__wrapfourth {
   padding-right: 77px;
 
@@ -456,6 +475,7 @@ button {
   background: #E51937;
   width: 219px;
   height: 55px;
+  cursor: pointer;
 
 }
 
@@ -463,6 +483,7 @@ button {
   background: #FFF;
   color: #E51937;
   border: 2px solid #E51937;
+  transition: background .5s;
 
 }
 
@@ -648,8 +669,8 @@ button {
 
 .sectionfirst__footer {
     grid-template-columns: 38% 50%;
-    grid-row-gap: 34px;
-    margin-bottom: 26px;
+    grid-row-gap: 30px;
+    margin-bottom: 22px;
 
 }
 
@@ -748,13 +769,13 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
-  padding: 57px 30px 57px 43px;
+  padding: 52px 27px 63px 46px;
 
 }
  
 .sectionsecond__wrapper {
   margin-right: 12px;
-  margin-bottom: 63px;
+  margin-bottom: 60px;
 
 }
 
@@ -777,12 +798,12 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  
 }
 
 .sectionsecond__benefit {
  display: flex;
- margin-bottom: 35px;
+ margin-bottom: 25px;
  justify-content: flex-start;
  align-items: center;
 
@@ -822,6 +843,7 @@ button {
   font-family: Montserrat-Regular;
   font-size: 12px;
   color: #FFF;
+  padding-right: 90px;
 
 }
 
@@ -843,7 +865,8 @@ button {
   font-size: 13px;
   color : #FFF;
   text-decoration: none;
-  
+  text-transform: uppercase;
+
 }
 
 .sectionsecond__link:hover {
@@ -853,24 +876,38 @@ button {
 
 }
 
+.sectionsecond__link:active {
+  opacity: .9;
+  transition: opacity 0.2s ease;
+
+}
+
 .sectionsecond__order{
   font-family: Montserrat-Bold;
   font-size: 13px;
   color : #FFF;
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #FFF;
   width: 160px;
   height: 40px;
-  
+  cursor: pointer;
+
 }
 
 .sectionsecond__order:hover {
   background: #FFF;
   color: #E51937;
   border: 2px solid #E51937;
+  transition: background .5s ease;
 
 }
 
+.sectionsecond__order:activ {
+  opacity: .9;
+  transition: opacity 0.2s ease;
+
+}
  .sectionsecond__exclam{
   padding-top: 6px;
 
@@ -917,7 +954,7 @@ button {
   width: 100%;
   min-height: auto;
   flex-direction: initial;
-  padding: 57px 63px 57px 35px;
+  padding: 46px 70px 54px 35px;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -937,12 +974,16 @@ button {
 .sectionsecond__benefits {
   margin-left: 0;
   width: 38%;
-
+ 
 }
 
 .sectionsecond__benefit {
   margin-bottom: 18px;
 
+}
+
+.sectionsecond__descsmall {
+  padding-right: 0;
 }
 
 .sectionsecond__icon {
@@ -977,6 +1018,7 @@ button {
 .sectionsecond__link {
   font-size: 16px;
   padding-right: 15px;
+  text-transform: uppercase;
 
 }
 
@@ -984,6 +1026,7 @@ button {
   font-size: 16px;
   width: 220px;
   height: 55px;
+  text-transform: uppercase;
 
 }
 
@@ -1038,7 +1081,7 @@ button {
 }
 
 .sectionsecond__right {
-  padding: 15px 31px 40px 27px;
+  padding: 17px 31px 40px 27px;
   min-height: auto;
 
 }
@@ -1117,6 +1160,7 @@ h6 {
   font-family: Montserrat-Bold;
   font-size: 17px;
   color : #FFF;
+  text-transform: uppercase;
 
 }
 
@@ -1124,6 +1168,7 @@ h6 {
   font-family: Montserrat-Bold;
   font-size: 10px;
   color : #FFF;
+  opacity: .7;
 
 }
 
@@ -1190,7 +1235,8 @@ h6 {
   font-size: 13px;
   color : #FFF;
   text-decoration: none;
-  
+  text-transform: uppercase;
+
 }
 
 .sidebar__link:hover {
@@ -1200,21 +1246,36 @@ h6 {
 
 }
 
+.sidebar__link:active {
+  opacity: .9;
+  transition: opacity 0.2s ease;
+
+}
+
 .sidebar__order  {
   font-family: Montserrat-Bold;
   font-size: 13px;
   color : #FFF;
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #FFF;
   width: 160px;
   height: 40px;
-  
+  cursor: pointer;
+
 }
 
 .sidebar__order:hover {
   background: #FFF;
   color: #E51937;
   border: 2px solid #E51937;
+  transition: background .5s ease;
+
+}
+
+.sidebar__order:active {
+  opacity: .9;
+  transition: opacity 0.2s ease;
 
 }
 
@@ -1246,6 +1307,19 @@ h6 {
 
 .sectionthird__car_mobil {
   display: none;
+
+}
+
+.sectionthird__logoschool {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  font-family: Montserrat-Bold; 
+  font-size: 10px;
+  position: absolute;
+  bottom: 33px;
+  right: 5px;
 
 }
 
